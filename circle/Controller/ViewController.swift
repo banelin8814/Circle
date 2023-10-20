@@ -7,23 +7,28 @@
 
 
 import UIKit
-import AVFoundation
+import AVFoundation//B.有關拍照
+import CoreLocation//A.有關定位
+
 
 class ViewController: UIViewController {
+    
+    let loctionManager = CLLocationManager() //A.有關定位
+   
     
     @IBOutlet weak var showImage: UIImageView!
     
     //captute session
-    var session: AVCaptureSession?
+    var session: AVCaptureSession?//B.有關拍照
     
     //photo output
-    var output =  AVCapturePhotoOutput()
+    var output =  AVCapturePhotoOutput()//B.有關拍照
      
     //video preview
-    let previewLayer = AVCaptureVideoPreviewLayer()
+    let previewLayer = AVCaptureVideoPreviewLayer()//B.有關拍照
     
     //ShutterButton 閃光燈
-    private let shutterButton: UIButton = {
+    private let shutterButton: UIButton = {//B.有關拍照
         let button = UIButton(frame: CGRect(x:0,y:0, width: 100, height: 100))
         button.layer.cornerRadius = 100
         button.layer.borderWidth = 10
@@ -34,6 +39,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loctionManager.requestWhenInUseAuthorization()//A.有關定位/要求存取
+
         view.backgroundColor = .white
         view.layer.addSublayer(previewLayer)
         view.addSubview(shutterButton)
@@ -43,13 +50,14 @@ class ViewController: UIViewController {
             
         }
         
+    //B.有關拍照
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         previewLayer.frame = view.bounds
         
         shutterButton.center = CGPoint(x: view.frame.size.width / 2, y: view.frame.size.height - 100)
      }
-        
+    //B.有關拍照
         private func checkCameraPermissions() {  //確保我們有權限
             switch AVCaptureDevice.authorizationStatus(for: .video) {
                 
@@ -74,7 +82,9 @@ class ViewController: UIViewController {
                 break
             }
         }
-        
+    
+     
+    //B.有關拍照
         private func setUpCamera() {
             let session = AVCaptureSession()
             if let device = AVCaptureDevice.default(for: .video){
@@ -114,7 +124,7 @@ class ViewController: UIViewController {
     }
     
 }
-
+//B.有關拍照
 extension ViewController: AVCapturePhotoCaptureDelegate {
     func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
         guard let data = photo.fileDataRepresentation() else {

@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1B0C18532ADFD84F00526D1A /* goSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = goSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B0C18532ADFD84F00526D1A /* circle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = circle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B0C18562ADFD84F00526D1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B0C18582ADFD84F00526D1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1B0C185A2ADFD84F00526D1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +40,7 @@
 		1B0C184A2ADFD84F00526D1A = {
 			isa = PBXGroup;
 			children = (
-				1B0C18552ADFD84F00526D1A /* goSocial */,
+				1B0C18552ADFD84F00526D1A /* circle */,
 				1B0C18542ADFD84F00526D1A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,31 +48,55 @@
 		1B0C18542ADFD84F00526D1A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1B0C18532ADFD84F00526D1A /* goSocial.app */,
+				1B0C18532ADFD84F00526D1A /* circle.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1B0C18552ADFD84F00526D1A /* goSocial */ = {
+		1B0C18552ADFD84F00526D1A /* circle */ = {
 			isa = PBXGroup;
 			children = (
 				1B0C18562ADFD84F00526D1A /* AppDelegate.swift */,
 				1B0C18582ADFD84F00526D1A /* SceneDelegate.swift */,
-				1B0C185A2ADFD84F00526D1A /* ViewController.swift */,
-				1B0C185C2ADFD84F00526D1A /* Main.storyboard */,
+				1B302B702AE280FC004D5765 /* Model */,
+				1B302B712AE2810E004D5765 /* View */,
+				1B302B722AE2813E004D5765 /* Controller */,
 				1B0C185F2ADFD85000526D1A /* Assets.xcassets */,
 				1B0C18612ADFD85000526D1A /* LaunchScreen.storyboard */,
 				1B0C18642ADFD85000526D1A /* Info.plist */,
 			);
-			path = goSocial;
+			path = circle;
+			sourceTree = "<group>";
+		};
+		1B302B702AE280FC004D5765 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1B302B712AE2810E004D5765 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1B0C185C2ADFD84F00526D1A /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1B302B722AE2813E004D5765 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1B0C185A2ADFD84F00526D1A /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1B0C18522ADFD84F00526D1A /* goSocial */ = {
+		1B0C18522ADFD84F00526D1A /* circle */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1B0C18672ADFD85000526D1A /* Build configuration list for PBXNativeTarget "goSocial" */;
+			buildConfigurationList = 1B0C18672ADFD85000526D1A /* Build configuration list for PBXNativeTarget "circle" */;
 			buildPhases = (
 				1B0C184F2ADFD84F00526D1A /* Sources */,
 				1B0C18502ADFD84F00526D1A /* Frameworks */,
@@ -82,9 +106,9 @@
 			);
 			dependencies = (
 			);
-			name = goSocial;
+			name = circle;
 			productName = goSocial;
-			productReference = 1B0C18532ADFD84F00526D1A /* goSocial.app */;
+			productReference = 1B0C18532ADFD84F00526D1A /* circle.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +126,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1B0C184E2ADFD84F00526D1A /* Build configuration list for PBXProject "goSocial" */;
+			buildConfigurationList = 1B0C184E2ADFD84F00526D1A /* Build configuration list for PBXProject "circle" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +139,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1B0C18522ADFD84F00526D1A /* goSocial */,
+				1B0C18522ADFD84F00526D1A /* circle */,
 			);
 		};
 /* End PBXProject section */
@@ -346,7 +370,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1B0C184E2ADFD84F00526D1A /* Build configuration list for PBXProject "goSocial" */ = {
+		1B0C184E2ADFD84F00526D1A /* Build configuration list for PBXProject "circle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1B0C18652ADFD85000526D1A /* Debug */,
@@ -355,7 +379,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1B0C18672ADFD85000526D1A /* Build configuration list for PBXNativeTarget "goSocial" */ = {
+		1B0C18672ADFD85000526D1A /* Build configuration list for PBXNativeTarget "circle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1B0C18682ADFD85000526D1A /* Debug */,
