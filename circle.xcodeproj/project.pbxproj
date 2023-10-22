@@ -318,13 +318,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 96FT7QHVFB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = goSocial/Info.plist;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_FILE = circle/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "和朋友一起拍照吧！";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "你要開啟定位才可以拍照喔";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -347,13 +348,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 96FT7QHVFB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = goSocial/Info.plist;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_FILE = circle/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "和朋友一起拍照吧！";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "你要開啟定位才可以拍照喔";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
